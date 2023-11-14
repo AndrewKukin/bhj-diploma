@@ -3,7 +3,20 @@
  * Управляет счетами пользователя.
  * Имеет свойство URL со значением '/transaction'
  * */
-class Transaction extends Entity {
 
+import createRequest from './createRequest.js';
+import Entity from './Entity.js';
+
+class Transaction extends Entity {
+  static URL = '/transaction';
+
+  static get(id, callback) {
+    createRequest({
+      url: `${Transaction.URL}/${id}`,
+      method: 'GET',
+      callback,
+    });
+  }
 }
 
+export default Transaction;

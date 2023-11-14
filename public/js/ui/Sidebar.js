@@ -3,6 +3,9 @@
  * кнопки скрытия/показа колонки в мобильной версии сайта
  * и за кнопки меню
  * */
+
+import App from '../App.js';
+
 class Sidebar {
   /**
    * Запускает initAuthLinks и initToggleButton
@@ -18,7 +21,16 @@ class Sidebar {
    * при нажатии на кнопку .sidebar-toggle
    * */
   static initToggleButton() {
+    const toggleButton = document.querySelector('.sidebar-toggle');
 
+    toggleButton.addEventListener('click', () => {
+      const body = document.querySelector('body');
+
+      body.classList.toggle('sidebar-open');
+      body.classList.toggle('sidebar-collapse');
+
+      console.log('click')
+    });
   }
 
   /**
@@ -29,6 +41,33 @@ class Sidebar {
    * выходу устанавливает App.setState( 'init' )
    * */
   static initAuthLinks() {
+    const loginButton = document.querySelector('.menu-item.login');
+    const registerButton = document.querySelector('.menu-item.register');
+    const logoutButton = document.querySelector('.menu-item.logout');
 
+    if (loginButton) {
+      loginButton.addEventListener('click', () => {
+        const loginModal = App.getModal('#modal-login');
+        loginModal.open();
+      });
+    }
+
+    if (registerButton) {
+      registerButton.addEventListener('click', () => {
+        const registerModal = App.getModal('#modal-register');
+        registerModal.open();
+      });
+    }
+
+    if (logoutButton) {
+      logoutButton.addEventListener('click', async () => {
+        const response = await User.logout();
+        if (response.success) {
+          App.setState('init');
+        }
+      });
+    }
   }
 }
+
+export default Sidebar;
