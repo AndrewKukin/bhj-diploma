@@ -1,17 +1,3 @@
-/**
- * Класс App управляет всем приложением
- * */
-// import TransactionsPage from './ui/pages/TransactionsPage.js';
-// import AccountsWidget from './ui/widgets/AccountsWidget.js';
-// import TransactionsWidget from './ui/widgets/TransactionsWidget.js';
-// import UserWidget from './ui/widgets/UserWidget.js';
-// import Modal from './ui/Modal.js';
-// import LoginForm from './ui/forms/LoginForm.js';
-// import RegisterForm from './ui/forms/RegisterForm.js';
-// import CreateAccountForm from './ui/forms/CreateAccountForm.js';
-// import CreateTransactionForm from './ui/forms/CreateTransactionForm.js';
-// import User from './api/User.js';
-
 class App {
   /**
    * С вызова этого метода начинается работа всего приложения
@@ -219,5 +205,3 @@ class App {
     this.getForm("createExpense").renderAccountsList();
   }
 }
-
-export default App;

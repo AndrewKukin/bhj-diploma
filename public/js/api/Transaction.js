@@ -3,10 +3,6 @@
  * Управляет счетами пользователя.
  * Имеет свойство URL со значением '/transaction'
  * */
-
-import createRequest from './createRequest.js';
-import Entity from './Entity.js';
-
 class Transaction extends Entity {
   static URL = '/transaction';
 
@@ -18,5 +14,3 @@ class Transaction extends Entity {
     });
   }
 }
-
-export default Transaction;

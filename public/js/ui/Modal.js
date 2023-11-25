@@ -37,5 +37,3 @@ class Modal {
     this.element.style.display = 'none';
   }
 }
-
-export default Modal;

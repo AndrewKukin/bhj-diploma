@@ -41,5 +41,3 @@ class AsyncForm {
   onSubmit(options) {
   }
 }
-
-export default AsyncForm;

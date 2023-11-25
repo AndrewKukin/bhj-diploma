@@ -3,8 +3,6 @@
  * регистрацией пользователя из приложения
  * Имеет свойство URL, равное '/user'.
  * */
-import createRequest from './createRequest.js';
-
 class User {
   static URL = '/user';
 
@@ -81,5 +79,3 @@ class User {
     });
   }
 }
-
-export default User;

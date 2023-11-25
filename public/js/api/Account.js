@@ -3,9 +3,6 @@
  * Управляет счетами пользователя.
  * Имеет свойство URL со значением '/account'
  * */
-import createRequest from './createRequest.js';
-import Entity from './Entity.js';
-
 class Account extends Entity {
   static URL = '/account';
 
@@ -17,5 +14,3 @@ class Account extends Entity {
     });
   }
 }
-
-export default Account;

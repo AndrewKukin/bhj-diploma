@@ -1,6 +1,3 @@
-import Account from "../../api/Account.js";
-import Transaction from "../../api/User.js";
-
 class TransactionsPage {
   /**
    * Если переданный элемент не существует,
@@ -203,5 +200,3 @@ class TransactionsPage {
     });
   }
 }
-
-export default TransactionsPage;

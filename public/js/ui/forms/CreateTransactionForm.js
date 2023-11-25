@@ -2,11 +2,6 @@
  * Класс CreateTransactionForm управляет формой
  * создания новой транзакции
  * */
-
-import AsyncForm from "./AsyncForm.js";
-import Account from "../../api/Account.js";
-import Transaction from "../../api/Transaction.js";
-
 class CreateTransactionForm extends AsyncForm {
   /**
    * Вызывает родительский конструктор и
@@ -71,5 +66,3 @@ class CreateTransactionForm extends AsyncForm {
     });
   }
 }
-
-export default CreateTransactionForm;

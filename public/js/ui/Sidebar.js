@@ -4,8 +4,6 @@
  * и за кнопки меню
  * */
 
-import App from '../App.js';
-
 class Sidebar {
   /**
    * Запускает initAuthLinks и initToggleButton
@@ -69,5 +67,3 @@ class Sidebar {
     }
   }
 }
-
-export default Sidebar;

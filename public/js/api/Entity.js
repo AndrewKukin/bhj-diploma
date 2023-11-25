@@ -2,8 +2,6 @@
  * Класс Entity - базовый для взаимодействия с сервером.
  * Имеет свойство URL, равно пустой строке.
  * */
-import createRequest from './createRequest.js';
-
 class Entity {
   static URL = '';
 
@@ -34,5 +32,3 @@ class Entity {
     });
   }
 }
-
-export default Entity;

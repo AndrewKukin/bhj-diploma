@@ -33,5 +33,3 @@ const createRequest = (options = {}) => {
       xhr.send(formData);
     }
   };
-  
-  export default createRequest;

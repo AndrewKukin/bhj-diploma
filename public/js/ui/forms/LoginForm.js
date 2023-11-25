@@ -2,9 +2,6 @@
  * Класс LoginForm управляет формой
  * входа в портал
  * */
-
-import AsyncForm from "./AsyncForm.js";
-
 class LoginForm extends AsyncForm {
   onSubmit(data) {
     User.login(data, (err, response) => {
@@ -23,5 +20,3 @@ class LoginForm extends AsyncForm {
     });
   }
 }
-
-export default LoginForm;

@@ -71,5 +71,3 @@ class AccountsWidget {
     this.element.insertAdjacentHTML("beforeend", html);
   }
 }
-
-export default AccountsWidget;

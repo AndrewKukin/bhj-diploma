@@ -24,5 +24,3 @@ class TransactionsWidget {
     });
   }
 }
-
-export default TransactionsWidget;

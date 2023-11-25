@@ -2,10 +2,6 @@
  * Класс CreateAccountForm управляет формой
  * создания нового счёта
  * */
-
-import AsyncForm from "./AsyncForm.js";
-import Account from "../../api/Account.js";
-
 class CreateAccountForm extends AsyncForm {
 
   onSubmit(data) {
@@ -26,5 +22,3 @@ class CreateAccountForm extends AsyncForm {
     });
   }
 }
-
-export default CreateAccountForm;

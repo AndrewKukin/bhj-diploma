@@ -2,9 +2,6 @@
  * Класс RegisterForm управляет формой
  * регистрации
  * */
-import AsyncForm from "./AsyncForm.js";
-
-
 class RegisterForm extends AsyncForm {
   onSubmit(options) {
     User.register(options, async (err, response) => {
@@ -24,5 +21,3 @@ class RegisterForm extends AsyncForm {
     });
   }
 }
-
-export default RegisterForm;
